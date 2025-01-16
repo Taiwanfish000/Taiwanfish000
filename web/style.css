@@ -1,0 +1,243 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+.myphoto {
+    width: 120px;
+    border-radius: 30px;
+    position: relative;
+}
+.photo {
+    text-align: center;
+   
+}
+.body {
+    margin: 0 ;
+}
+
+
+.name {
+    text-align: center;
+}
+h1 {
+    font-family: Microsoft JhengHei;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+.info {
+    color: #ffffff;
+    font-family: Microsoft JhengHei;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+.button {
+    position: relative;
+    display: block;
+    border: 5px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin: 30px 0;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+    .button span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: #A6FFFF;
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+
+    .button:hover,
+    .button:focus{
+        color: black
+    }
+     .button:hover span {
+    transform: translateY(0) scale(2);
+}
+    .button span:nth-child(1) {
+        --n: 1;
+}
+    .button span:nth-child(2) {
+        --n: 2;
+    }
+    .button span:nth-child(3) {
+        --n: 3;
+    }
+    .button span:nth-child(4) {
+        --n: 4;
+    }
+
+
+.button:hover {
+    transform: scale(1.2);
+}
+.ig{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 37px;
+    animation-name: zoom-in;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.FB {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    width: 40px;
+    animation-name: zoom-in;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.works {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: all .5s;
+   
+    overflow: hidden;
+}
+.works-tittle {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+.work-item:hover .works-tittle {
+    opacity: 1;
+}
+.works-tittle1 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+.work-item:hover .works-tittle1 {
+    opacity: 1;
+}
+.works-tittle2 {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+.work-item:hover .works-tittle2 {
+    opacity: 1;
+}
+
+.works-tittle3 {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+.work-item:hover .works-tittle3 {
+    opacity: 1;
+}
+
+.works-tittle4 {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+.work-item:hover .works-tittle4 {
+    opacity: 1;
+}
+
+.works-tittle5 {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.work-item:hover .works-tittle5 {
+    opacity: 1;
+}
+
+.work-item img:hover {
+    transform: scale(1.2);
+    filter: blur(5px);
+}
+@keyframes zoom-in{
+    from{
+        opacity: 0 ;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.video {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+
